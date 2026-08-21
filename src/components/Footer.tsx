@@ -11,6 +11,15 @@ const SOCIAL = [
     ),
   },
   {
+    label: "YouTube",
+    href: "https://www.youtube.com/@peritodigital",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.79C18.25 5 12 5 12 5s-6.25 0-7.8.4c-.87.23-1.55.92-1.78 1.79C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.55 1.78 1.79C5.75 19 12 19 12 19s6.25 0 7.8-.4c.87-.24 1.55-.92 1.78-1.79C22 15.25 22 12 22 12s0-3.25-.42-4.81ZM10 15.5v-7l6 3.5-6 3.5Z" />
+      </svg>
+    ),
+  },
+  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/peritojoaquimneto",
     icon: (
