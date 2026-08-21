@@ -11,11 +11,9 @@ export default function NoticiasIndex() {
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-6 pt-20 pb-20">
-      <div className="mx-auto mb-10 flex max-w-xs items-center gap-3 font-mono text-[11px] tracking-widest text-td-muted uppercase">
-        <span className="h-px flex-1 bg-td-border" />
-        Tribunal Digital · Notícias
-        <span className="h-px flex-1 bg-td-border" />
-      </div>
+      <p className="mb-3 text-center text-xs font-semibold uppercase tracking-widest text-td-gold">
+        Tribunal Digital
+      </p>
       <h1 className="font-title mb-10 text-center text-3xl font-bold text-td-white sm:text-4xl">
         Notícias
       </h1>

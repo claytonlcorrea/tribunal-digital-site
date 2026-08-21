@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         destination: "/noticias/:path+",
         permanent: true,
       },
+      // Rotas da versão anterior do site, que agora são seções da página única.
+      { source: "/comunidade", destination: "/#tribunal-digital", permanent: true },
+      { source: "/sobre", destination: "/#joaquim", permanent: true },
+      { source: "/contato", destination: "/#contato", permanent: true },
+      { source: "/servicos", destination: "/#tribunal-digital", permanent: true },
     ];
   },
 };

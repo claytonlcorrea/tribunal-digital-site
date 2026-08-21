@@ -14,7 +14,7 @@ export default function YouTubeEmbed({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-td-border bg-td-card">
+    <div className="relative aspect-video w-full overflow-hidden rounded-sm bg-td-card">
       {loaded ? (
         <iframe
           className="absolute inset-0 h-full w-full"

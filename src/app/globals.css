@@ -25,7 +25,6 @@
   --color-td-cream: var(--td-cream);
   --font-title: var(--font-lora);
   --font-body: var(--font-montserrat);
-  --font-mono: var(--font-plex-mono);
 }
 
 body {

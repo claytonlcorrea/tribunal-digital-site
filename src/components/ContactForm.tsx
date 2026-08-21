@@ -50,7 +50,7 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-sm border-l-2 border-td-border bg-td-card px-6 py-6">
+      <div className="rounded-sm border-l-2 border-td-gold bg-td-card px-6 py-6">
         <p className="text-td-white">
           Recebemos seu contato. Retornamos em breve.
         </p>
@@ -71,16 +71,16 @@ export default function ContactForm() {
           overflow: "hidden",
         }}
       >
-        <label htmlFor="website">Não preencher</label>
-        <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+        <label htmlFor="contact-website">Não preencher</label>
+        <input type="text" id="contact-website" name="website" tabIndex={-1} autoComplete="off" />
       </div>
 
       <div>
-        <label htmlFor="name" className="mb-1 block text-sm text-td-muted">
+        <label htmlFor="contact-name" className="mb-1 block text-sm text-td-muted">
           Nome
         </label>
         <input
-          id="name"
+          id="contact-name"
           name="name"
           type="text"
           required
@@ -89,24 +89,26 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="mb-1 block text-sm text-td-muted">
+        <label htmlFor="contact-email" className="mb-1 block text-sm text-td-muted">
           Email
         </label>
         <input
-          id="email"
+          id="contact-email"
           name="email"
           type="email"
           required
+          pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+          placeholder="contato@exemplo.com"
           className="w-full rounded-sm border border-td-border bg-td-card px-4 py-3 text-td-white outline-none focus:border-td-gold"
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="mb-1 block text-sm text-td-muted">
+        <label htmlFor="contact-phone" className="mb-1 block text-sm text-td-muted">
           WhatsApp
         </label>
         <input
-          id="phone"
+          id="contact-phone"
           name="phone"
           type="tel"
           required
@@ -118,11 +120,11 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm text-td-muted">
+        <label htmlFor="contact-message" className="mb-1 block text-sm text-td-muted">
           Mensagem
         </label>
         <textarea
-          id="message"
+          id="contact-message"
           name="message"
           rows={4}
           className="w-full rounded-sm border border-td-border bg-td-card px-4 py-3 text-td-white outline-none focus:border-td-gold"

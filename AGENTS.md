@@ -2,15 +2,21 @@
 
 ## O que é
 Site institucional completo do cliente Tribunal Digital, publicado no domínio
-tribunaldigital.com.br: Home, Sobre (Joaquim Neto), Comunidade, Notícias e Contato. A seção
-Notícias recebe as matérias geradas pela skill `/tribunal-digital-newsletter` (raiz do
-workspace) a partir da raspagem de notícias jurídicas, substituindo a publicação manual no
-WordPress. Nasceu como só blog em 2026-08, virou site institucional completo em 2026-08-20.
+tribunaldigital.com.br. Desde 2026-08-21, é uma página única (Hero, Sobre o Tribunal
+Digital, Sobre o Joaquim Neto, Contato, tudo em `/`) mais Notícias como página separada
+(`/noticias`). Reconstruído do zero nessa data — a versão anterior (com `/sobre`,
+`/comunidade`, `/contato` como páginas e conceito visual "Dossiê") foi descartada porque o
+cliente não gostou; o histórico fica preservado no repositório git próprio do projeto
+(github.com/claytonlcorrea/tribunal-digital-site, privado). Notícias recebe as matérias
+geradas pela skill `/tribunal-digital-newsletter` (raiz do workspace) a partir da raspagem
+de notícias jurídicas, substituindo a publicação manual no WordPress.
 
-O funil do site é único: todo CTA aponta pra Comunidade (`/comunidade#entrar`), não pra
-venda de perícia avulsa — isso é papel do site pessoal do Joaquim (joaquimneto.com.br), uma
-propriedade separada. Por isso não existe mais página `/servicos` aqui (removida em
-2026-08-20). Estrutura e visual seguem o conceito "Dossiê": ver
+O funil do site é único: todo CTA (nav, hero, seção Sobre o Tribunal Digital) abre um modal
+(`CTAModalProvider`/`CTAModal`) que captura nome/telefone/email e redireciona pro checkout
+pago da Comunidade — não pra venda de perícia avulsa, que é papel do site pessoal do Joaquim
+(joaquimneto.com.br), uma propriedade separada. O design é guiado pela skill
+`frontend-design`: fotografia real do cliente em bleed total, tipografia editorial grande,
+sem elementos decorativos de UI (nada de chips, badges ou molduras genéricas) — ver
 `clientes/tribunal-digital/marca/design-guide.md`.
 
 ## Tipo
@@ -20,7 +26,8 @@ Produto (site) — deliverable do cliente Tribunal Digital
 - App Next.js/React
 - Deploy no Cloudflare Workers via OpenNext (`@opennextjs/cloudflare`)
 - Domínio próprio: tribunaldigital.com.br (já configurado no Cloudflare)
-- Páginas: Home (`/`), Sobre (`/sobre`), Comunidade (`/comunidade`), Notícias (`/noticias`), Contato (`/contato`)
+- Páginas: Home (`/`, página única com âncoras `#tribunal-digital`, `#joaquim`, `#contato`), Notícias (`/noticias`)
+- `/sobre`, `/comunidade`, `/contato` e `/servicos` (rotas da versão anterior) redirecionam pra âncoras da home — ver `next.config.ts`
 - Posts em arquivos MDX, um por matéria, em `content/posts/`
 - `/blog` e `/blog/[slug]` (nome antigo da seção) redirecionam permanentemente pra
   `/noticias` equivalente — não remover esse redirect, tem link de newsletter já enviada
@@ -38,19 +45,24 @@ Produto (site) — deliverable do cliente Tribunal Digital
 - `scripts/generate-posts.mjs` — lê `content/posts/*.mdx`, converte markdown pra HTML (via `marked`) e gera `src/lib/posts-data.generated.ts`. Roda automaticamente antes de `build`/`dev` (ver `package.json`)
 - `src/lib/posts-data.generated.ts` — gerado, não editar à mão
 - `src/lib/posts.ts` — lê os dados já gerados (`posts-data.generated.ts`)
-- `src/app/page.tsx` — home (hero + 3 pilares + últimas matérias)
-- `src/app/sobre/page.tsx` — sobre o Joaquim e a metodologia
+- `src/app/page.tsx` — página única: Hero (`#hero`), Sobre o Tribunal Digital (`#tribunal-digital`), Sobre o Joaquim Neto (`#joaquim`, com os vídeos de palestra/podcast logo abaixo), Estudo de Caso (`#estudo-de-caso`, 2 vídeos), Contato (`#contato`)
+- `src/components/YouTubeEmbed.tsx` — embed com facade (miniatura do YouTube + clique pra carregar o iframe), usado nas seções Joaquim e Estudo de Caso. Os 4 vídeos são do canal pessoal do Joaquim (não hospedados aqui)
 - `src/app/noticias/page.tsx` — listagem completa
 - `src/app/noticias/[slug]/page.tsx` — post individual, renderiza `contentHtml` pré-compilado + resposta direta + FAQ, e injeta JSON-LD (`Article` sempre, `FAQPage` quando o post tem `faq`)
-- `src/app/contato/page.tsx` + `ContactForm.tsx` — formulário (nome/email/telefone/mensagem + honeypot)
-- `src/app/api/contact/route.ts` — recebe o form e cria contato no GHL via API (`services.leadconnectorhq.com`). Precisa de `GHL_API_TOKEN` (escopo `contacts.write`) e `GHL_LOCATION_ID` como secrets (`wrangler secret put`, ou `.dev.vars` local) — sem isso, responde erro genérico pro cliente sem quebrar o resto do site
-- `src/components/Nav.tsx` / `Footer.tsx` — navegação e rodapé compartilhados (Instagram @peritojoaquimneto, WhatsApp +55 85 8688-4321)
-- `next.config.ts` — redirect `/blog` → `/noticias` (ver regra abaixo)
+- `src/components/CTAModalProvider.tsx` / `CTAModal.tsx` / `CTAButton.tsx` — sistema de CTA global. `CTAModalProvider` envolve o `<body>` (em `layout.tsx`) e expõe `useCTAModal()`; qualquer botão em qualquer página usa `<CTAButton>` (ou o hook direto) pra abrir o modal, que captura nome/telefone/email e redireciona pro checkout (`CHECKOUT_URL` dentro de `CTAModal.tsx`)
+- `src/components/ContactForm.tsx` — formulário da seção Contato (nome/email/telefone/mensagem + honeypot), diferente do `CTAModal` (esse não redireciona pro checkout, só cria contato)
+- `src/app/api/community/route.ts` — recebe o form do `CTAModal` e cria contato no GHL, tag `site-comunidade`
+- `src/app/api/contact/route.ts` — recebe o `ContactForm` e cria contato no GHL, tag `site-contato`. Ambas as rotas precisam de `GHL_API_TOKEN` (escopo `contacts.write`) e `GHL_LOCATION_ID` como secrets (`wrangler secret put`, ou `.dev.vars` local) — sem isso, respondem erro genérico sem quebrar o resto do site
+- `src/components/Nav.tsx` / `Footer.tsx` — navegação e rodapé compartilhados. Footer usa `public/images/footer.webp` como imagem de fundo. Ícones: Instagram @peritojoaquimneto, LinkedIn peritojoaquimneto, WhatsApp +55 85 8688-4321
+- `next.config.ts` — redirect `/blog` → `/noticias`, e `/sobre` `/comunidade` `/contato` `/servicos` → âncoras da home
 - `src/app/sitemap.ts` / `src/app/robots.ts` — sitemap e robots.txt gerados a partir dos posts, automáticos
 - `src/app/globals.css` — paleta e tipografia do Tribunal Digital (Tailwind v4, tokens `--td-*`)
 - `wrangler.jsonc` — config do Worker `tribunal-digital-blog`, rotas do domínio tribunaldigital.com.br
-- `public/images/logo.jpeg` — logo oficial (cópia de `clientes/tribunal-digital/marca/LogoTribunalDigital.jpeg`)
-- `public/images/joaquim-sobre.png` — foto usada na página Sobre (cópia de `clientes/tribunal-digital/marca/foto_sites.png`)
+- `public/images/joaquim-header.png` — foto do hero (Joaquim à direita, espaço vazio à esquerda pra headline)
+- `public/images/joaquim-perfil.png` — foto retrato P&B usada na seção Sobre o Joaquim
+- `public/images/logo.jpeg` — selo/logo oficial do Tribunal Digital, usado no nav e na seção Sobre o Tribunal Digital
+- `public/images/footer.webp` — foto de fundo do rodapé
+- Todas as fotos originais (resolução maior) ficam em `clientes/tribunal-digital/marca/fotos/`
 
 ## Regras específicas
 - Publicação de post novo é feita pela skill `/publicar-blog-td` (raiz do workspace), não manualmente

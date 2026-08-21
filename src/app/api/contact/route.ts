@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     phone,
     message,
     source: "SITE_TRIBUNAL_CONTATO",
-    tags: ["site-contato", "servicos"],
+    tags: ["site-contato"],
   });
 
   if (!result.ok) {
