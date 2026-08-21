@@ -1,0 +1,51 @@
+// Gerado automaticamente por scripts/generate-posts.mjs a partir de content/posts/*.mdx
+// Não editar à mão — rode "npm run build" (ou o script direto) pra regenerar.
+import type { Post } from "./posts";
+
+export const POSTS: Post[] = [
+  {
+    "slug": "prompt-injection-processo-judicial-crime",
+    "frontmatter": {
+      "title": "O que é \"prompt injection\" em processo judicial, e por que virou crime no Brasil",
+      "date": "2026-08-17",
+      "excerpt": "PL 2543/26 torna crime esconder comandos em documentos pra enganar a IA que analisa processos judiciais. Já existe caso identificado na Justiça do Trabalho.",
+      "source": "PL 2543/26 (dep. Alberto Fraga) · Caso real na 3ª Vara do Trabalho de Parauapebas",
+      "summary": "Prompt injection é a inserção de comandos escondidos num documento pra enganar a inteligência artificial que analisa processos judiciais. O PL 2543/26, em análise na Câmara dos Deputados, torna essa conduta crime, com pena de 1 a 4 anos de prisão e multa. Já existe caso identificado na Justiça do Trabalho brasileira.",
+      "faq": [
+        {
+          "question": "Prompt injection já é crime hoje, antes do PL ser aprovado?",
+          "answer": "Não necessariamente com tipificação específica. O PL 2543/26 é quem cria o tipo penal dedicado a essa conduta no processo judicial e administrativo. Antes da aprovação, a discussão jurídica é sobre atipicidade e enquadramento em outros crimes já existentes, como fraude processual."
+        },
+        {
+          "question": "Como identificar prompt injection num documento?",
+          "answer": "O caso de Parauapebas foi descoberto por texto em fonte branca sobre fundo branco, mas a técnica pode usar outros métodos de ocultação, como metadados, camadas invisíveis em PDF ou caracteres de controle. Verificação técnica do arquivo bruto, além da leitura visual, é o caminho."
+        },
+        {
+          "question": "Isso vale só pra processo trabalhista?",
+          "answer": "Não. O caso identificado foi na Justiça do Trabalho, mas o PL 2543/26 é escrito de forma abrangente, cobrindo processos judiciais e administrativos em geral, incluindo o processo penal."
+        }
+      ]
+    },
+    "contentHtml": "<h2>O que é prompt injection?</h2>\n<p>Prompt injection é a inserção deliberada de instruções em documentos, arquivos ou outros conteúdos processados por sistemas de inteligência artificial, com o objetivo de manipular o comportamento do modelo. No processo judicial, isso significa esconder um comando dentro de uma petição pra fazer a IA que auxilia o Judiciário se comportar de um jeito que favorece quem inseriu o comando, sem que nenhum humano perceba.</p>\n<h2>Já teve caso real no Brasil?</h2>\n<p>Sim. Em 12 de maio de 2026, a 3ª Vara do Trabalho de Parauapebas identificou, numa petição inicial, um comando escrito em fonte branca sobre fundo branco, invisível pra leitura humana. O texto instruía o sistema de inteligência artificial da Justiça do Trabalho a contestar o documento de forma superficial e não impugnar os documentos apresentados. O comando só foi descoberto porque alguém verificou o arquivo além da leitura visual normal.</p>\n<h2>O que diz o PL 2543/26?</h2>\n<p>O projeto, de autoria do deputado Alberto Fraga (PL-DF), tipifica prompt injection como crime no Código Penal quando usado em processos judiciais e administrativos com o objetivo de obter vantagem indevida, causar dano ou influenciar resultado automatizado. A pena prevista é de 1 a 4 anos de prisão e multa. Ela pode aumentar de 1/3 até a metade quando o crime resulta em violação de sigilo, alteração de decisão, interrupção relevante de serviço público, prejuízo à Justiça ou acesso a dados judiciais sensíveis. O projeto ainda está em análise na Câmara dos Deputados.</p>\n<h2>O que isso muda pra advogado criminalista?</h2>\n<p>Duas coisas na prática. Primeiro, prompt injection já é uma fraude processual real, não hipótese acadêmica, e advogado que lida com sistemas que usam IA (seja pra triagem, pra análise de documento, pra apoio decisório) precisa saber que documentos podem carregar instruções escondidas, inclusive pra revisar o que a própria parte contrária protocola. Segundo, se o PL avançar, vira também uma ferramenta de defesa técnica: identificar e provar que um documento continha prompt injection passa a ser argumento jurídico com tipificação própria, não só questão de ética ou boa-fé processual.</p>\n"
+  },
+  {
+    "slug": "stj-print-sem-arquivo-original",
+    "frontmatter": {
+      "title": "STJ anula condenação porque a prova era só um print, sem o arquivo original",
+      "date": "2026-08-17",
+      "excerpt": "STJ anulou sentença condenatória porque a prova era print de tela sem o arquivo digital original, decisão que reforça a distinção entre admissibilidade e valoração da prova digital.",
+      "source": "ConJur · AREsp 3.132.918/RS (STJ, jun/2026)"
+    },
+    "contentHtml": "<p>O STJ decidiu, em junho de 2026, que capturas de tela sem o arquivo digital original são inadmissíveis como prova. No AREsp 3.132.918/RS, a corte determinou o desentranhamento do print dos autos e anulou a sentença condenatória que se apoiava nele. O fundamento foi direto: sem o arquivo original, é impossível verificar a cadeia de custódia e a mesmidade entre o que foi colhido e o que chegou ao processo.</p>\n<p>O caso confirma uma tese que o STJ já vinha construindo desde 2023, no AgRg no RHC 143.169/RJ (Rel. Min. Ribeiro Dantas), quando fixou que cópia integral bit a bit e algoritmo hash são parâmetros técnicos mínimos, e que é do Estado o ônus de demonstrar a integridade e a confiabilidade da prova digital. Em junho deste ano, a Jurisprudência em Teses nº 281 sistematizou esse entendimento: integridade e auditabilidade exigem preservação da cadeia de custódia e possibilidade de exame técnico independente.</p>\n<p>Existe uma distinção que muita defesa ainda confunde na prática: admissibilidade e valoração são dois momentos diferentes. Admissibilidade verifica se a prova reúne condições jurídicas mínimas pra entrar no processo. Valoração é o peso que ela recebe depois de já ter passado por esse filtro. Quando essas duas etapas se misturam, prova frágil entra nos autos sob a promessa de &quot;isso a gente discute depois&quot;, e às vezes esse depois nunca chega com o rigor que deveria.</p>\n<p>Tem também uma inversão de lógica que vale reforçar: a premissa tradicional é a defesa ter que provar que houve adulteração. Mas como provar manipulação num ambiente que já não pode ser auditado, porque o arquivo original nunca foi preservado? Essa pergunta é a base de qualquer contestação técnica sobre print de tela como prova.</p>\n<p>Na prática, isso dá à defesa um checklist objetivo pra exigir antes de aceitar prova digital baseada em capturas de tela: arquivo original (não só a imagem do print), metadados disponíveis, documentação de como o material foi coletado e extraído, registro de como foi armazenado, e mecanismo que comprove que o que chegou aos autos é exatamente o que foi arrecadado. Se qualquer um desses pontos não está documentado no laudo ou na juntada, existe base técnica e jurisprudencial pra questionar a admissibilidade da prova, não só o peso dela.</p>\n<p>Sofisticação tecnológica não pode virar desculpa pra reduzir garantia processual. Quanto mais fácil é manipular um meio de prova, maior precisa ser o controle sobre como ela foi formada. E esse controle começa antes da prova ser aceita no processo, não depois.</p>\n"
+  },
+  {
+    "slug": "um-hash-nao-prova-nada-sozinho",
+    "frontmatter": {
+      "title": "STJ decide: hash sozinho não garante que a prova digital é íntegra",
+      "date": "2026-08-14",
+      "excerpt": "STJ fixou que ausência de certificação de integridade (hash) exige perícia técnica complementar em prova digital.",
+      "source": "STJ · Informativo nº 878 (fev/2026)"
+    },
+    "contentHtml": "<p>O STJ publicou em fevereiro de 2026 uma decisão que todo criminalista que trabalha com prova digital precisa conhecer. No julgamento do <strong>AgRg no HC 1.014.212-ES</strong>, relatado pelo Ministro Carlos Pires Brandão, a Sexta Turma fixou que a simples apresentação de um código hash não é suficiente para comprovar a integridade de uma prova digital. Havendo dúvida razoável sobre integridade ou autenticidade, o exame pericial passa a ser necessário para garantir a confiabilidade do material e viabilizar o exercício do contraditório.</p>\n<p>Na prática, isso confirma algo que a defesa técnica já vinha percebendo no dia a dia dos processos: o hash funciona como marcador entre dois momentos, não como certificado de idoneidade da extração inteira. Ele prova que um arquivo não mudou entre o ponto A e o ponto B. Não prova como os dados chegaram até o ponto A, nem se o processo de extração seguiu metodologia auditável.</p>\n<p>O STJ foi direto nesse ponto. Relatórios circunstanciados e autorização judicial, por si só, não substituem a documentação técnica mínima da cadeia de custódia. Dados digitais são voláteis e alteráveis sem deixar rastro evidente. Sem extração forense auditável, a confiabilidade do conteúdo probatório cai de forma drástica, mesmo quando existe um hash anexado ao laudo.</p>\n<p>Isso muda a estratégia de quem defende. Um hash isolado no laudo pericial não fecha a discussão sobre integridade da prova, abre ela. A pergunta que a defesa deveria estar fazendo em cada caso com prova digital não é &quot;existe hash?&quot;, é <strong>&quot;qual foi a metodologia de extração, quem executou, com qual ferramenta, e o hash foi calculado antes ou depois de qualquer manipulação dos dados?&quot;</strong>. Se essas respostas não estão documentadas no laudo, existe base técnica e agora também jurisprudencial para requerer perícia complementar.</p>\n<p>Pra advogado criminalista, o caminho prático é simples: usar essa decisão como fundamento para pedir a documentação completa da cadeia de custódia sempre que uma prova digital tiver peso relevante no processo. Não é obstrução processual, é exercício do contraditório reconhecido pelo próprio STJ. Quando o laudo não sustenta essa documentação, a porta pra nulidade ou pra perícia complementar está aberta, e agora com precedente de fevereiro de 2026 pra citar.</p>\n"
+  }
+];

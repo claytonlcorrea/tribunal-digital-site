@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta oficial — clientes/tribunal-digital/marca/design-guide.md */
+  --td-bg: #0f1916;
+  --td-bg-onGold: #101b18;
+  --td-card: #16211d;
+  --td-border: #2a2113;
+  --td-muted: #94a5a0;
+  --td-gold: #9f7643;
+  --td-white: #ffffff;
+  --td-cta: #aa854d;
+  --td-cream: #fce8c9;
+}
+
+@theme inline {
+  --color-td-bg: var(--td-bg);
+  --color-td-bg-on-gold: var(--td-bg-onGold);
+  --color-td-card: var(--td-card);
+  --color-td-border: var(--td-border);
+  --color-td-muted: var(--td-muted);
+  --color-td-gold: var(--td-gold);
+  --color-td-white: var(--td-white);
+  --color-td-cta: var(--td-cta);
+  --color-td-cream: var(--td-cream);
+  --font-title: var(--font-lora);
+  --font-body: var(--font-montserrat);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--td-bg);
+  color: var(--td-white);
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+.prose-td {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--td-white);
+}
+
+.prose-td p {
+  margin-bottom: 1.5em;
+}
+
+.prose-td strong {
+  color: var(--td-cream);
+  font-weight: 600;
+}
+
+.prose-td a {
+  color: var(--td-gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-td h2,
+.prose-td h3 {
+  font-family: var(--font-title), Georgia, serif;
+  color: var(--td-white);
+  font-weight: 700;
+  margin-top: 1.75em;
+  margin-bottom: 0.75em;
+}

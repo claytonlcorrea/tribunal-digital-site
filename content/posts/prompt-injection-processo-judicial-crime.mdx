@@ -1,0 +1,30 @@
+---
+title: "O que é \"prompt injection\" em processo judicial, e por que virou crime no Brasil"
+date: "2026-08-17"
+excerpt: "PL 2543/26 torna crime esconder comandos em documentos pra enganar a IA que analisa processos judiciais. Já existe caso identificado na Justiça do Trabalho."
+source: "PL 2543/26 (dep. Alberto Fraga) · Caso real na 3ª Vara do Trabalho de Parauapebas"
+summary: "Prompt injection é a inserção de comandos escondidos num documento pra enganar a inteligência artificial que analisa processos judiciais. O PL 2543/26, em análise na Câmara dos Deputados, torna essa conduta crime, com pena de 1 a 4 anos de prisão e multa. Já existe caso identificado na Justiça do Trabalho brasileira."
+faq:
+  - question: "Prompt injection já é crime hoje, antes do PL ser aprovado?"
+    answer: "Não necessariamente com tipificação específica. O PL 2543/26 é quem cria o tipo penal dedicado a essa conduta no processo judicial e administrativo. Antes da aprovação, a discussão jurídica é sobre atipicidade e enquadramento em outros crimes já existentes, como fraude processual."
+  - question: "Como identificar prompt injection num documento?"
+    answer: "O caso de Parauapebas foi descoberto por texto em fonte branca sobre fundo branco, mas a técnica pode usar outros métodos de ocultação, como metadados, camadas invisíveis em PDF ou caracteres de controle. Verificação técnica do arquivo bruto, além da leitura visual, é o caminho."
+  - question: "Isso vale só pra processo trabalhista?"
+    answer: "Não. O caso identificado foi na Justiça do Trabalho, mas o PL 2543/26 é escrito de forma abrangente, cobrindo processos judiciais e administrativos em geral, incluindo o processo penal."
+---
+
+## O que é prompt injection?
+
+Prompt injection é a inserção deliberada de instruções em documentos, arquivos ou outros conteúdos processados por sistemas de inteligência artificial, com o objetivo de manipular o comportamento do modelo. No processo judicial, isso significa esconder um comando dentro de uma petição pra fazer a IA que auxilia o Judiciário se comportar de um jeito que favorece quem inseriu o comando, sem que nenhum humano perceba.
+
+## Já teve caso real no Brasil?
+
+Sim. Em 12 de maio de 2026, a 3ª Vara do Trabalho de Parauapebas identificou, numa petição inicial, um comando escrito em fonte branca sobre fundo branco, invisível pra leitura humana. O texto instruía o sistema de inteligência artificial da Justiça do Trabalho a contestar o documento de forma superficial e não impugnar os documentos apresentados. O comando só foi descoberto porque alguém verificou o arquivo além da leitura visual normal.
+
+## O que diz o PL 2543/26?
+
+O projeto, de autoria do deputado Alberto Fraga (PL-DF), tipifica prompt injection como crime no Código Penal quando usado em processos judiciais e administrativos com o objetivo de obter vantagem indevida, causar dano ou influenciar resultado automatizado. A pena prevista é de 1 a 4 anos de prisão e multa. Ela pode aumentar de 1/3 até a metade quando o crime resulta em violação de sigilo, alteração de decisão, interrupção relevante de serviço público, prejuízo à Justiça ou acesso a dados judiciais sensíveis. O projeto ainda está em análise na Câmara dos Deputados.
+
+## O que isso muda pra advogado criminalista?
+
+Duas coisas na prática. Primeiro, prompt injection já é uma fraude processual real, não hipótese acadêmica, e advogado que lida com sistemas que usam IA (seja pra triagem, pra análise de documento, pra apoio decisório) precisa saber que documentos podem carregar instruções escondidas, inclusive pra revisar o que a própria parte contrária protocola. Segundo, se o PL avançar, vira também uma ferramenta de defesa técnica: identificar e provar que um documento continha prompt injection passa a ser argumento jurídico com tipificação própria, não só questão de ética ou boa-fé processual.
