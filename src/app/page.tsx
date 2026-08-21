@@ -56,9 +56,6 @@ export default function Home() {
               Quem não entende provas digitais, não é chamado para{" "}
               <span className="text-td-cream">grandes operações</span>.
             </h1>
-            <CTAButton className="mt-9 rounded-sm bg-td-cta px-7 py-3.5 font-semibold text-td-bg-on-gold transition hover:opacity-90">
-              Garantir minha vaga na Comunidade
-            </CTAButton>
           </div>
         </div>
       </section>
@@ -219,7 +216,7 @@ export default function Home() {
           className="mx-auto w-full max-w-6xl border-t border-td-border px-6 py-20"
         >
           <p className="mb-10 text-xs font-semibold uppercase tracking-widest text-td-gold">
-            Notícias
+            Artigos e Notícias
           </p>
           <div className="divide-y divide-td-border border-t border-td-border">
             {posts.length === 0 && (
