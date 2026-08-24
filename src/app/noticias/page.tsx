@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/posts";
+import { formatPostDate, getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Notícias — Tribunal Digital",
@@ -28,7 +28,8 @@ export default function NoticiasIndex() {
             className="group block py-6"
           >
             <p className="mb-1 text-xs uppercase tracking-wide text-td-gold">
-              {post.frontmatter.source}
+              {formatPostDate(post.frontmatter.date)}
+              {post.frontmatter.source ? ` - ${post.frontmatter.source}` : ""}
             </p>
             <h2 className="font-title text-xl font-semibold text-td-white transition group-hover:text-td-cream">
               {post.frontmatter.title}

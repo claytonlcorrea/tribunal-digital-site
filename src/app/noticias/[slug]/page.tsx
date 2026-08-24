@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { formatPostDate, getAllPosts, getPostBySlug } from "@/lib/posts";
 
 const SITE_URL = "https://tribunaldigital.com.br";
 
@@ -84,7 +84,8 @@ export default async function NoticiaPost({
       )}
 
       <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-td-gold">
-        {post.frontmatter.source}
+        {formatPostDate(post.frontmatter.date)}
+        {post.frontmatter.source ? ` - ${post.frontmatter.source}` : ""}
       </p>
       <h1 className="font-title mb-6 text-3xl font-bold leading-tight text-td-white sm:text-4xl">
         {post.frontmatter.title}

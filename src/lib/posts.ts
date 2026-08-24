@@ -30,3 +30,10 @@ export function getAllPosts(): Post[] {
 export function getPostBySlug(slug: string): Post | null {
   return POSTS.find((post) => post.slug === slug) ?? null;
 }
+
+// Formata a data do frontmatter ("YYYY-MM-DD") pra "DD/MM/YYYY", usado no
+// cabeçalho do post (data de publicação no blog, não a data do julgado/fonte).
+export function formatPostDate(isoDate: string): string {
+  const [year, month, day] = isoDate.split("-");
+  return `${day}/${month}/${year}`;
+}
