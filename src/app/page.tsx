@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import CTAButton from "@/components/CTAButton";
 import ContactForm from "@/components/ContactForm";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
-import { getAllPosts } from "@/lib/posts";
+import { formatPostDate, getAllPosts } from "@/lib/posts";
 
 const PALESTRAS_E_PODCAST = [
   {
@@ -229,7 +229,8 @@ export default function Home() {
                 className="group block py-6"
               >
                 <p className="mb-1 text-xs uppercase tracking-wide text-td-gold">
-                  {post.frontmatter.source}
+                  {formatPostDate(post.frontmatter.date)}
+                  {post.frontmatter.source ? ` - ${post.frontmatter.source}` : ""}
                 </p>
                 <h3 className="font-title text-xl font-semibold text-td-white transition group-hover:text-td-cream">
                   {post.frontmatter.title}
