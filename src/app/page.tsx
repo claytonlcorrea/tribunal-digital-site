@@ -125,45 +125,40 @@ export default function Home() {
               Quem é
             </p>
             <h2 className="font-title text-3xl font-bold leading-tight text-td-white sm:text-4xl">
-              Joaquim Bartolomeu Ferreira Neto
+              Joaquim Neto, Perito Digital
             </h2>
             <div className="mt-6 flex flex-col gap-4 leading-relaxed text-td-muted">
               <p>
-                Perito digital, palestrante, membro da comissão especial de
-                perícias da OAB-SP. Computer Hacking Forensics Investigator
-                (CHFI v10), Certified Ethical Hacker (CEH v11), Certified
-                Networking Security Expert (CNSE), Certified Security
-                Architecture Expert (CSAE), Especialista em Informática
-                Forense pelo IPOG e Audio and Image Forensics pela BluEAD,
-                Pós-graduando em Cibersegurança Ofensiva pela ACADI-TI,
-                graduado em Gestão de Recursos Humanos pela Ateneu e Técnico
-                em Redes de Computadores pelo IFCE.
+                Sou Joaquim Neto, perito digital, mentor de advogados e
+                criador da primeira comunidade de provas digitais para
+                advogados do Brasil.
               </p>
               <p>
-                Em mais de 10 anos de experiência, trabalhou como Perito
-                Judicial, Assistente Técnico, Especialista em Recuperação de
-                Dados, Analista de Redes de Computadores, Infraestrutura de
-                TI, Desenvolvedor Web e Professor. É autor do livro IPED Zero
-                to Hero, coautor de OSINT do Zero à Investigação Profissional
-                e coautor de Perícias Digitais, criador do método RDPD
-                (Recuperação de Dados com Perícia Digital) e do método PDA
-                (Provas Digitais Advanced).
+                Depois de anos mergulhado em investigações, certificações e
+                análises forenses, criei o Tribunal Digital, um método que
+                ensina advogados criminalistas a transformar provas técnicas
+                em teses jurídicas capazes de virar um processo.
+              </p>
+              <p>
+                Hoje, ajudo advogados a descobrir o que a acusação não quer
+                que eles vejam: os detalhes invisíveis que fazem toda a
+                diferença entre uma condenação e uma absolvição.
               </p>
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-sm lg:mx-0 lg:ml-auto">
+          <div className="mx-auto w-full lg:mx-0 lg:ml-auto">
             <Image
-              src="/images/joaquim-03.png"
+              src="/images/joaquim-01.png"
               alt="Joaquim Neto"
-              width={896}
-              height={1195}
+              width={1536}
+              height={1024}
               className="w-full"
               style={{
                 maskImage:
-                  "radial-gradient(ellipse 62% 67% at center, black 32%, transparent 100%)",
+                  "radial-gradient(ellipse 75% 80% at center, black 40%, transparent 100%)",
                 WebkitMaskImage:
-                  "radial-gradient(ellipse 62% 67% at center, black 32%, transparent 100%)",
+                  "radial-gradient(ellipse 75% 80% at center, black 40%, transparent 100%)",
               }}
             />
           </div>
