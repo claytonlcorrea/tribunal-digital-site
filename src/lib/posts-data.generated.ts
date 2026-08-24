@@ -4,6 +4,35 @@ import type { Post } from "./posts";
 
 export const POSTS: Post[] = [
   {
+    "slug": "stj-operacao-capistrum-extracao-celular",
+    "frontmatter": {
+      "title": "Prova de celular sem informar quem fez a extração é válida? STJ diz que não",
+      "date": "2026-08-24",
+      "excerpt": "STJ anulou decisão do TJMT que validou prova extraída de celulares na Operação Capistrum por falta de informação sobre responsável, método e data da extração.",
+      "source": "STJ · 5ª Turma, rel. min. Ribeiro Dantas · Operação Capistrum (Cuiabá/MT)",
+      "summary": "Não. Segundo o STJ (5ª Turma, ministro Ribeiro Dantas), a decisão que valida prova extraída de celular apreendido precisa deixar claro quem fez a extração, qual método foi usado e quando o procedimento ocorreu. Sem essas informações, a decisão pode ser anulada e o caso volta pra um novo julgamento focado só na legalidade da prova digital, mesmo em investigações de grande repercussão como a Operação Capistrum, em Cuiabá.",
+      "faq": [
+        {
+          "question": "O que uma decisão que valida prova extraída de celular precisa informar?",
+          "answer": "Segundo o STJ, o acórdão precisa deixar claro quem foi o responsável pela extração, qual método técnico foi usado e a data em que o procedimento ocorreu."
+        },
+        {
+          "question": "Falta de informação sobre a extração anula a prova automaticamente?",
+          "answer": "Não anula por completo, mas obriga o tribunal a fazer um novo julgamento focado especificamente na legalidade da prova digital antes de seguir com o restante do caso."
+        },
+        {
+          "question": "Essa exigência vale só pra casos de grande repercussão?",
+          "answer": "Não. É um padrão de cadeia de custódia que vale pra qualquer prova extraída de celular apreendido, independente do porte ou da visibilidade do caso."
+        },
+        {
+          "question": "Como identificar essa falha antes de discutir hash ou perícia técnica?",
+          "answer": "Verificando se o próprio texto da decisão que validou a prova responde quem extraiu, como extraiu e quando extraiu; a ausência dessas informações já é motivo pra questionar a cadeia de custódia."
+        }
+      ]
+    },
+    "contentHtml": "<p>A Operação Capistrum investiga um suposto esquema de fura-fila na vacinação contra a covid-19 em Cuiabá, em que nomes de pessoas fora dos grupos prioritários teriam sido inseridos no sistema municipal de saúde a partir de indicações recebidas por WhatsApp. A prova central contra os investigados, entre eles o ex-prefeito Emanuel Pinheiro, veio de conversas e dados extraídos de celulares apreendidos na operação.</p>\n<p>O TJMT havia validado essa prova digital, mas a defesa alegou quebra de cadeia de custódia porque o acórdão não trazia informação sobre quem fez a extração dos aparelhos, qual método técnico foi usado, nem a data em que o procedimento ocorreu.</p>\n<p>A 5ª Turma do STJ, sob relatoria do ministro Ribeiro Dantas, anulou a decisão do TJMT e determinou que o tribunal faça novo julgamento voltado especificamente pra analisar a legalidade da prova digital, exigindo que fique claro como a coleta, extração e preservação dos dados aconteceram.</p>\n<p>A decisão reforça algo que muitos criminalistas ainda tratam como detalhe processual: cadeia de custódia não é só sobre hash e perícia técnica. É também sobre o texto da própria decisão que valida a prova trazer, de forma explícita, quem foi o responsável pela extração, qual método foi usado e quando ela ocorreu. Faltando isso, mesmo numa investigação de grande repercussão, o STJ entende que a decisão não pode ser mantida.</p>\n<p>Advogado criminalista que lê o acórdão que validou a prova digital do cliente e confere se ele responde a essas três perguntas, quem extraiu, como extraiu e quando extraiu, consegue identificar uma nulidade processual antes mesmo de entrar na discussão técnica sobre hash ou integridade do arquivo.</p>\n"
+  },
+  {
     "slug": "stj-print-whatsapp-prisao-preventiva",
     "frontmatter": {
       "title": "Print de WhatsApp sem perícia pode anular prisão preventiva, decide STJ",
