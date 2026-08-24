@@ -53,7 +53,7 @@ export default function Home() {
               Tribunal Digital
             </p>
             <h1 className="font-title text-4xl font-bold leading-[1.15] text-td-white sm:text-5xl lg:text-6xl">
-              Quem não entende provas digitais, não é lembrado para{" "}
+              Quem não entende provas digitais, não é lembrado em{" "}
               <span className="text-td-cream">grandes operações</span>.
             </h1>
           </div>
