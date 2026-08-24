@@ -1,5 +1,11 @@
 type GhlEnv = Record<string, string | undefined>;
 
+// Campo personalizado "Mensagem" (contact.mensagem), criado no location do Tribunal
+// Digital especificamente pra guardar o texto do formulário de Contato. Precisa ser um
+// campo de verdade (não nota) pra poder ser usado como merge tag num workflow do GHL,
+// por exemplo pra notificar o closer via WhatsApp quando chega mensagem nova.
+const MENSAGEM_FIELD_ID = "Btkc93SxAM4uEDoW4Cl8";
+
 type CreateGhlContactInput = {
   name: string;
   email: string;
@@ -42,33 +48,15 @@ export async function createGhlContact(
         phone: input.phone || undefined,
         source: input.source,
         tags: input.tags,
+        customFields: input.message
+          ? [{ id: MENSAGEM_FIELD_ID, value: input.message }]
+          : undefined,
       }),
     });
 
     if (!ghlRes.ok) {
       console.error("ghl: resposta de erro", ghlRes.status, await ghlRes.text());
       return { ok: false, error: "ghl_error" };
-    }
-
-    // Mensagem livre vai como nota anexada ao contato, GHL não tem campo padrão pra isso
-    // no create de contato. Best-effort: se falhar, não derruba o sucesso principal.
-    if (input.message) {
-      const created = (await ghlRes.json()) as { contact?: { id?: string } };
-      const contactId = created.contact?.id;
-      if (contactId) {
-        try {
-          await fetch(
-            `https://services.leadconnectorhq.com/contacts/${contactId}/notes`,
-            {
-              method: "POST",
-              headers: ghlHeaders,
-              body: JSON.stringify({ body: input.message }),
-            },
-          );
-        } catch (err) {
-          console.error("ghl: falha ao anexar nota", err);
-        }
-      }
     }
 
     return { ok: true };
