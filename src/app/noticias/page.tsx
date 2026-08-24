@@ -4,7 +4,7 @@ import { formatPostDate, getAllPosts } from "@/lib/posts";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Notícias — Tribunal Digital",
+  title: "Artigos e Notícias — Tribunal Digital",
 };
 
 export default function NoticiasIndex() {
@@ -16,7 +16,7 @@ export default function NoticiasIndex() {
         Tribunal Digital
       </p>
       <h1 className="font-title mb-10 text-center text-3xl font-bold text-td-white sm:text-4xl">
-        Notícias
+        Artigos e Notícias
       </h1>
       <NewsletterForm />
       <div className="divide-y divide-td-border border-t border-td-border">
