@@ -92,8 +92,6 @@ export default async function NoticiaPost({
         {post.frontmatter.title}
       </h1>
 
-      <ShareButtons url={url} title={post.frontmatter.title} />
-
       {post.frontmatter.summary && (
         <div className="mb-8 rounded-md border-l-2 border-td-border bg-td-card px-6 py-5">
           <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-td-gold">
@@ -128,6 +126,10 @@ export default async function NoticiaPost({
           </div>
         </div>
       )}
+
+      <div className="mt-12">
+        <ShareButtons url={url} title={post.frontmatter.title} />
+      </div>
     </main>
   );
 }
