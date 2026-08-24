@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { formatPostDate, getAllPosts } from "@/lib/posts";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
   title: "Notícias — Tribunal Digital",
@@ -17,6 +18,7 @@ export default function NoticiasIndex() {
       <h1 className="font-title mb-10 text-center text-3xl font-bold text-td-white sm:text-4xl">
         Notícias
       </h1>
+      <NewsletterForm />
       <div className="divide-y divide-td-border border-t border-td-border">
         {posts.length === 0 && (
           <p className="py-6 text-td-muted">Nenhuma matéria publicada ainda.</p>
