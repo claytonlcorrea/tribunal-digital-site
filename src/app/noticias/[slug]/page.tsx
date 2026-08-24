@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { formatPostDate, getAllPosts, getPostBySlug } from "@/lib/posts";
+import ShareButtons from "@/components/ShareButtons";
 
 const SITE_URL = "https://tribunaldigital.com.br";
 
@@ -90,6 +91,8 @@ export default async function NoticiaPost({
       <h1 className="font-title mb-6 text-3xl font-bold leading-tight text-td-white sm:text-4xl">
         {post.frontmatter.title}
       </h1>
+
+      <ShareButtons url={url} title={post.frontmatter.title} />
 
       {post.frontmatter.summary && (
         <div className="mb-8 rounded-md border-l-2 border-td-border bg-td-card px-6 py-5">
