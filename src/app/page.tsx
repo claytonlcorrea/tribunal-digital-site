@@ -53,7 +53,7 @@ export default function Home() {
               Tribunal Digital
             </p>
             <h1 className="font-title text-4xl font-bold leading-[1.15] text-td-white sm:text-5xl lg:text-6xl">
-              Quem não entende provas digitais, não é chamado para{" "}
+              Quem não entende provas digitais, não é lembrado para{" "}
               <span className="text-td-cream">grandes operações</span>.
             </h1>
           </div>
@@ -147,18 +147,18 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mx-auto w-full lg:mx-0 lg:ml-auto">
+          <div className="mx-auto w-full max-w-sm lg:mx-0 lg:ml-auto">
             <Image
-              src="/images/joaquim-01.png"
+              src="/images/joaquim-04.jpeg"
               alt="Joaquim Neto"
-              width={1536}
-              height={1024}
+              width={1792}
+              height={2400}
               className="w-full"
               style={{
                 maskImage:
-                  "radial-gradient(ellipse 75% 80% at center, black 40%, transparent 100%)",
+                  "radial-gradient(ellipse 62% 67% at center, black 32%, transparent 100%)",
                 WebkitMaskImage:
-                  "radial-gradient(ellipse 75% 80% at center, black 40%, transparent 100%)",
+                  "radial-gradient(ellipse 62% 67% at center, black 32%, transparent 100%)",
               }}
             />
           </div>
