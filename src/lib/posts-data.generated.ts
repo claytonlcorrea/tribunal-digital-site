@@ -4,6 +4,64 @@ import type { Post } from "./posts";
 
 export const POSTS: Post[] = [
   {
+    "slug": "stj-cadeia-custodia-hash-inq1674",
+    "frontmatter": {
+      "title": "Alegar quebra de cadeia de custódia sem provar adulteração anula a prova digital? STJ diz que não",
+      "date": "2026-08-25",
+      "excerpt": "STJ valida cópia espelhada com hash e coleta preliminar de dados de celular por investigador, e exige demonstração concreta de adulteração pra anular prova por quebra de cadeia de custódia.",
+      "source": "STJ · Corte Especial · Inq 1.674-DF · rel. min. Nancy Andrighi",
+      "summary": "Não. Segundo o STJ (Corte Especial, Inq 1.674-DF, relatora ministra Nancy Andrighi), alegar quebra de cadeia de custódia sem apontar uma adulteração concreta não anula a prova digital. A Corte validou que cópia espelhada com hash é instrumento hábil pra garantir integridade, e que investigador pode fazer coleta preliminar de dados de celular sem perito oficial presente naquele momento.",
+      "faq": [
+        {
+          "question": "Só alegar quebra de cadeia de custódia anula a prova digital?",
+          "answer": "Não. Segundo o STJ, é preciso demonstrar concretamente que houve adulteração ou prejuízo real à prova; a simples alegação, sem apontar a falha específica, não é suficiente."
+        },
+        {
+          "question": "Investigador pode mexer no celular apreendido sem perito presente?",
+          "answer": "Segundo o STJ, sim, pra verificação e coleta preliminar de dados durante o cumprimento do mandado, sem precisar de perito oficial no momento exato da apreensão."
+        },
+        {
+          "question": "Cópia espelhada com hash é prova válida?",
+          "answer": "Segundo o STJ, sim. A cópia por espelhamento usando função hash é considerada instrumento hábil pra garantir integridade e auditabilidade da prova digital."
+        },
+        {
+          "question": "Como o advogado usa a tese de cadeia de custódia de forma eficaz?",
+          "answer": "Apontando a falha concreta do procedimento (quem fez a extração, qual método, se teve hash, se há cronologia documentada), não só invocando \"cadeia de custódia\" de forma genérica."
+        }
+      ]
+    },
+    "contentHtml": "<p>Durante o cumprimento de um mandado de busca e apreensão, investigadores apreenderam um tablet do investigado e fizeram verificação e coleta preliminar de dados diretamente no aparelho, sem perito oficial presente naquele momento específico. A defesa alegou quebra de cadeia de custódia.</p>\n<p>A Corte Especial do STJ, no Inq 1.674-DF, relatado pela ministra Nancy Andrighi, decidiu por unanimidade que cópia por espelhamento de dados usando função hash é instrumento hábil pra garantir integridade e auditabilidade da prova. E que investigador pode, sim, fazer verificação e coleta preliminar de dados de celular durante o cumprimento do mandado, sem precisar de perito oficial presente naquele exato momento.</p>\n<p>O ponto central pra quem defende: alegar quebra de cadeia de custódia não basta sozinho. A Corte foi clara ao exigir demonstração concreta de adulteração ou prejuízo real à prova. Presumir má conduta da investigação sem nenhuma prova concreta não anula nada.</p>\n<p>Isso não enfraquece os casos que já mostramos aqui, onde faltou hash, faltou documentação de quem fez a extração, faltou data do procedimento. A diferença é que, naqueles casos, a própria decisão que validou a prova não trazia essas informações básicas. Aqui, o procedimento teve hash, espelhamento e cronologia documentada, e a defesa não apontou nenhuma adulteração concreta, só alegou a falha em tese.</p>\n<p>A vantagem estratégica muda de lugar: não adianta invocar &quot;cadeia de custódia&quot; como fórmula genérica. A tese funciona quando a defesa aponta especificamente o que falhou no procedimento, quem fez, como fez, quando fez, se teve hash. Sem isso, a alegação sozinha não segura o argumento perante o STJ.</p>\n"
+  },
+  {
+    "slug": "stj-laudo-ia-generativa-nao-vale-como-prova",
+    "frontmatter": {
+      "title": "Laudo feito por IA generativa vale como prova no processo penal? STJ diz que não",
+      "date": "2026-08-25",
+      "excerpt": "STJ decidiu que relatório técnico gerado por IA generativa, como Gemini ou ChatGPT, não substitui perícia oficial no processo penal.",
+      "source": "STJ · HC 1.059.475/SP, rel. min. Reynaldo Soares da Fonseca (fev/2026)",
+      "summary": "Não. O STJ (5ª Turma, HC 1.059.475/SP, ministro Reynaldo Soares da Fonseca) decidiu que relatório produzido por IA generativa, como Gemini ou ChatGPT, não vale como prova pericial no processo penal. Faltam a esses documentos perito oficial responsável, metodologia científica verificável e possibilidade de auditoria, elementos exigidos pelos artigos 157 e 158-A a 159 do CPP.",
+      "faq": [
+        {
+          "question": "Laudo feito por ChatGPT ou Gemini pode embasar uma denúncia?",
+          "answer": "Segundo o STJ, não. O relatório gerado por IA generativa não tem aptidão pra substituir perícia oficial porque falta metodologia verificável e responsável técnico."
+        },
+        {
+          "question": "Isso é a mesma coisa que quebra de cadeia de custódia?",
+          "answer": "Não. O próprio relator do caso registrou que a validade de laudos de IA generativa é uma discussão distinta e mais ampla do que a quebra de cadeia de custódia."
+        },
+        {
+          "question": "Por que um relatório de IA é considerado tecnicamente frágil como prova?",
+          "answer": "Porque sistemas de IA generativa funcionam a partir de padrões extraídos de grandes volumes de dados, com natureza probabilística, o que compromete a confiabilidade em contextos que exigem rigor técnico e precisão."
+        },
+        {
+          "question": "O que a defesa pode questionar quando a acusação usa um documento de IA como prova técnica?",
+          "answer": "Se aquele documento tem perito oficial responsável, metodologia auditável e cadeia de custódia. Sem esses três elementos, não é prova pericial, mesmo que pareça tecnicamente sofisticado."
+        }
+      ]
+    },
+    "contentHtml": "<p>Em fevereiro de 2026, a 5ª Turma do STJ julgou o HC 1.059.475/SP, envolvendo um vice-prefeito do interior de São Paulo denunciado por injúria racial. A acusação teria sido dita durante um episódio gravado em vídeo. A base da denúncia por racismo não foi uma perícia oficial, foi um &quot;Relatório Técnico&quot; gerado pelas plataformas Gemini e Perplexity, usado pra transcrever e interpretar o áudio.</p>\n<p>O problema é que o caso já tinha sido submetido a duas perícias oficiais do Instituto de Criminalística, uma escuta técnica e uma análise espectrográfica com equipamento calibrado, e as duas concluíram que a palavra imputada ao investigado não havia sido dita. Mesmo assim, a acusação seguiu com base no laudo de IA, que contradizia frontalmente os dois exames periciais oficiais.</p>\n<p>O relator, ministro Reynaldo Soares da Fonseca, manteve a suspensão da ação penal e foi direto ao ponto que interessa pra qualquer criminalista: relatório de IA generativa não é prova pericial. É um documento sem metodologia científica verificável, sem perito oficial responsável, sem cadeia de custódia e sem possibilidade de auditoria. A decisão cita os artigos 157, 158-A, 158-B e 159 do CPP como fundamento pra essa exigência.</p>\n<p>Mais do que isso, o ministro deixou registrado que essa discussão vai além de quebra de cadeia de custódia. Nas palavras dele, &quot;a análise a respeito da validade de laudos produzidos por inteligência artificial generativa ainda não foi submetida ao crivo desta Corte Superior. Trata-se de tema de extrema relevância que não se confunde com a mera quebra da cadeia de custódia da prova.&quot; O fundamento técnico é a natureza probabilística desses sistemas: eles operam extraindo padrões de grandes volumes de dados, o que compromete a confiabilidade quando o que se exige é rigor técnico e precisão empírica, não a resposta mais provável.</p>\n<p>Pra quem atua na defesa, o caso é um mapa de como reagir quando a acusação anexa aos autos um documento gerado por ChatGPT, Gemini ou qualquer outra IA generativa como se fosse laudo técnico. A pergunta não é &quot;a IA errou nesse caso específico&quot;. A pergunta é se aquele documento tem, estruturalmente, os elementos que uma perícia exige: perito oficial responsável, metodologia auditável e cadeia de custódia. Sem isso, não é prova pericial, é só um texto produzido por um sistema probabilístico, por melhor que pareça.</p>\n"
+  },
+  {
     "slug": "stj-operacao-capistrum-extracao-celular",
     "frontmatter": {
       "title": "Prova de celular sem informar quem fez a extração é válida? STJ diz que não",
