@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from "react";
 import { formatPhone } from "@/lib/format";
 
-const CHECKOUT_URL = "https://clkdmg.site/subscribe/tribunal-digital-anual";
+const CHECKOUT_URL = "https://clkdmg.site/subscribe/comunidade-tribunal-digital-anual";
 
 export default function CTAModal({
   open,
