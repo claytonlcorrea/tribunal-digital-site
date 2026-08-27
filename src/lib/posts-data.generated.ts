@@ -4,6 +4,64 @@ import type { Post } from "./posts";
 
 export const POSTS: Post[] = [
   {
+    "slug": "stj-print-vitima-organizacao-criminosa",
+    "frontmatter": {
+      "title": "Print de conversa feito pela vítima vale como prova sem perícia? STJ diz que não",
+      "date": "2026-08-27",
+      "excerpt": "STJ anulou condenação por organização criminosa baseada em print produzido unilateralmente pela vítima, sem perícia nem procedimento formal de preservação.",
+      "source": "STJ · 5ª Turma · AREsp 2.967.413/RS · rel. min. Ribeiro Dantas",
+      "summary": "Não. Segundo o STJ (AREsp 2.967.413/RS, 5ª Turma, ministro Ribeiro Dantas), print de conversa produzido unilateralmente pela vítima, sem perícia técnica nem procedimento formal de preservação e documentação, não sustenta sozinho uma condenação. A confiabilidade da prova digital não se presume, precisa ser demonstrada tecnicamente, não importa quem a produziu.",
+      "faq": [
+        {
+          "question": "Print feito pela vítima é prova válida sem perícia?",
+          "answer": "Não com segurança. Segundo o STJ, mesmo vindo da vítima, o print precisa de documentação técnica de preservação e coleta pra sustentar uma condenação."
+        },
+        {
+          "question": "A exigência de cadeia de custódia vale só pra prova produzida pela investigação?",
+          "answer": "Não. O STJ deixou claro que a exigência vale pra qualquer prova digital, independente de quem a produziu, incluindo vítima ou testemunha."
+        },
+        {
+          "question": "O que significa \"a confiabilidade da prova não se presume\"?",
+          "answer": "Significa que ninguém pode considerar um print autêntico só porque parece verdadeiro; a autenticidade precisa ser demonstrada por documentação técnica objetiva, como perícia ou outro método de verificação."
+        },
+        {
+          "question": "Como o advogado usa essa decisão na prática?",
+          "answer": "Verificando se a prova central do caso é só um print trazido por particular, sem perícia posterior; se sim, há base pra questionar a condenação por falta de cadeia de custódia documentada."
+        }
+      ]
+    },
+    "contentHtml": "<p>Uma condenação por organização criminosa foi sustentada em capturas de tela de conversas de aplicativo de mensagens. O detalhe que decidiu o caso: essas capturas foram produzidas unilateralmente pela própria vítima, sem perícia técnica e sem nenhum procedimento formal de preservação, coleta, acondicionamento e documentação.</p>\n<p>No AREsp 2.967.413/RS, relatado pelo ministro Ribeiro Dantas, a 5ª Turma do STJ anulou o acórdão condenatório por insuficiência de motivação quanto à cadeia de custódia da prova.</p>\n<p>O princípio central do julgado: a confiabilidade da prova digital não se presume, precisa ser demonstrada por documentação técnica e objetiva. Isso vale mesmo quando quem produziu o print não é a acusação nem a investigação, é a própria vítima.</p>\n<p>Muita gente assume que prova trazida por um particular, vítima ou testemunha, segue um padrão mais frouxo do que prova produzida pelo Estado. Esse julgado reforça o contrário: não importa quem trouxe o print aos autos, sem demonstração técnica de integridade, a prova não sustenta uma condenação sozinha.</p>\n<p>Advogado que identifica que a prova central do caso é só um print da vítima, sem perícia posterior nem cadeia de custódia documentada, tem base concreta pra questionar a condenação, independente de quem produziu o material originalmente.</p>\n"
+  },
+  {
+    "slug": "stj-relatorio-ia-generativa-prova-penal",
+    "frontmatter": {
+      "title": "IA generativa (Gemini, ChatGPT) pode virar prova no processo penal? STJ diz que não",
+      "date": "2026-08-26",
+      "excerpt": "STJ excluiu dos autos relatório de investigação feito com Gemini e Perplexity que contrariou perícia oficial de áudio, por falta de confiabilidade epistêmica.",
+      "source": "STJ · 5ª Turma · HC 1.059.475-SP · rel. min. Reynaldo Soares da Fonseca",
+      "summary": "Não. Segundo o STJ (5ª Turma, HC 1.059.475-SP, relator ministro Reynaldo Soares da Fonseca, abril de 2026), relatório produzido com ferramentas de IA generativa, como Gemini e Perplexity, não tem confiabilidade epistêmica mínima pra servir como prova em processo penal. No caso julgado, a IA foi usada pra fazer análise fonética de um áudio, tarefa que ferramentas de texto não são capazes de realizar com o rigor técnico de uma perícia, e o resultado contrariou a perícia criminalística oficial. A Corte determinou a exclusão do relatório dos autos.",
+      "faq": [
+        {
+          "question": "IA generativa como ChatGPT, Gemini ou Perplexity pode analisar áudio ou vídeo como prova técnica?",
+          "answer": "Não com confiabilidade. Segundo o STJ, essas ferramentas processam texto, não onda sonora, e não têm competência técnica reconhecida pra fazer análise fonética ou de conteúdo audiovisual com o rigor exigido numa perícia formal."
+        },
+        {
+          "question": "O que acontece quando um relatório de IA contradiz a perícia oficial?",
+          "answer": "No caso julgado pelo STJ, a perícia criminalística oficial não identificou o elemento apontado pela IA generativa, e a Corte excluiu o relatório de IA dos autos por falta de confiabilidade epistêmica, prevalecendo o exame técnico formal."
+        },
+        {
+          "question": "Prova produzida com apoio de IA generativa é sempre ilícita?",
+          "answer": "Não necessariamente. O STJ separou dois conceitos: prova ilícita é a obtida em violação à lei; prova sem confiabilidade epistêmica é a que, mesmo sem ilegalidade formal, não tem credibilidade técnica suficiente. O relatório de IA foi excluído pelo segundo motivo."
+        },
+        {
+          "question": "Como o advogado usa essa decisão na prática?",
+          "answer": "Questionando tecnicamente qualquer elemento produzido com apoio de IA generativa no processo: qual ferramenta foi usada, se ela é apta pra aquele tipo de análise, se existe perícia formal contraditando o resultado, e se houve verificação humana especializada antes do relatório virar prova."
+        }
+      ]
+    },
+    "contentHtml": "<p>Um vídeo gravado por um cinegrafista num estádio de futebol virou o centro de uma discussão que muda a forma como IA generativa pode ser usada em investigação criminal. O caso: um torcedor foi acusado de injúria racial por supostamente chamar a vítima de &quot;macaco&quot; durante uma partida. A perícia oficial de criminalística analisou o áudio e não encontrou a palavra. Diante disso, o investigador responsável encaminhou o mesmo vídeo pra um setor de inteligência da investigação, que rodou o material em ferramentas de IA generativa, Gemini e Perplexity, e produziu um relatório concluindo o contrário: que a palavra tinha sido dita.</p>\n<p>Esse relatório de IA foi juntado aos autos como elemento de prova, contradizendo a perícia técnica formal.</p>\n<p>O caso chegou à Quinta Turma do Superior Tribunal de Justiça no HC 1.059.475-SP, relatado pelo ministro Reynaldo Soares da Fonseca e julgado em 7 de abril de 2026. Por unanimidade, a Turma decidiu excluir o relatório de IA dos autos.</p>\n<h2>Por que a IA generativa falhou nesse caso</h2>\n<p>O fundamento técnico da decisão é simples de explicar pra quem já trabalha com prova digital: ferramentas de IA generativa como Gemini, ChatGPT e Perplexity são construídas pra processar texto, não onda sonora. Elas não têm capacidade de fazer análise fonética de um áudio com o rigor técnico que esse tipo de perícia exige. Quando uma dessas ferramentas &quot;escuta&quot; um vídeo e devolve uma transcrição ou conclusão sobre o que foi dito, ela está gerando uma resposta plausível a partir de padrões de linguagem, não fazendo perícia acústica.</p>\n<p>Soma-se a isso o risco de alucinação, que é a tendência dessas ferramentas de produzir informação fabricada com aparência de verdade, sem nenhum sinal visível de que aquilo não é confiável. No caso julgado, o resultado da IA generativa contrariou diretamente a perícia criminalística oficial, e foi essa perícia que prevaleceu.</p>\n<h2>A distinção que o STJ deixou clara</h2>\n<p>O ponto mais importante da decisão pra quem atua na defesa não é só o resultado (relatório excluído), é o raciocínio usado pra chegar lá. O STJ separou dois conceitos que costumam ser tratados como sinônimos na prática forense: prova ilícita e prova sem confiabilidade epistêmica.</p>\n<p>Prova ilícita é a que foi obtida violando a lei, o clássico terreno de nulidade por quebra de procedimento. Prova sem confiabilidade epistêmica é outra coisa: o elemento pode até ter sido produzido sem nenhuma ilegalidade formal, e mesmo assim não ter credibilidade técnica suficiente pra sustentar uma acusação. Foi esse segundo caminho que o STJ usou pra excluir o relatório de IA, não o primeiro.</p>\n<p>Essa distinção abre uma frente de discussão nova. Não basta mais perguntar se um elemento produzido com apoio de IA generativa foi obtido de forma lícita. É preciso perguntar, antes disso, se aquela ferramenta tem qualquer competência técnica reconhecida pra fazer o tipo de análise que fez, seja fonética, de imagem ou de qualquer outro dado sensível ao contexto.</p>\n<h2>O que isso muda na prática pro criminalista</h2>\n<p>Com IA generativa cada vez mais presente em relatórios de investigação, essa decisão dá uma base concreta pra questionar qualquer elemento produzido dessa forma. Os pontos técnicos que valem levantar diante de um relatório desse tipo:</p>\n<ul>\n<li>Qual ferramenta foi usada e se ela foi projetada pra aquele tipo de análise (texto, áudio, imagem, vídeo)</li>\n<li>Se existe perícia formal contraditando ou confirmando o resultado da IA</li>\n<li>Se houve qualquer verificação humana especializada antes do relatório virar elemento de prova</li>\n<li>Se o relatório apresenta métricas de confiabilidade, taxa de erro ou qualquer forma de auditoria do resultado gerado</li>\n</ul>\n<p>Essa decisão não fecha a porta pra uso de IA generativa em investigação. Ela deixa claro que o resultado de uma ferramenta de texto não substitui perícia técnica formal quando o que está em jogo é matéria fora da competência daquela ferramenta. Pra defesa, é mais um ponto de controle técnico específico pra cobrar antes de aceitar esse tipo de material como prova.</p>\n"
+  },
+  {
     "slug": "stj-cadeia-custodia-hash-inq1674",
     "frontmatter": {
       "title": "Alegar quebra de cadeia de custódia sem provar adulteração anula a prova digital? STJ diz que não",
