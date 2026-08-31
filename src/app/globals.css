@@ -54,6 +54,28 @@ body {
   text-underline-offset: 2px;
 }
 
+.prose-td ol,
+.prose-td ul {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.prose-td ol {
+  list-style-type: decimal;
+}
+
+.prose-td ul {
+  list-style-type: disc;
+}
+
+.prose-td li {
+  margin-bottom: 0.5em;
+}
+
+.prose-td li::marker {
+  color: var(--td-gold);
+}
+
 .prose-td h2,
 .prose-td h3 {
   font-family: var(--font-title), Georgia, serif;

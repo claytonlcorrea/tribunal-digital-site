@@ -4,6 +4,64 @@ import type { Post } from "./posts";
 
 export const POSTS: Post[] = [
   {
+    "slug": "stj-fonte-independente-extracao-celular",
+    "frontmatter": {
+      "title": "Print de WhatsApp obtido sem autorização contamina a extração posterior do celular? STJ diz que não",
+      "date": "2026-08-31",
+      "excerpt": "STJ negou habeas corpus e aplicou a teoria da fonte independente à extração de dados de celular feita após o desentranhamento de prints de WhatsApp obtidos ilegalmente.",
+      "source": "STJ · Sexta Turma · HC 1.035.054-SP · rel. min. Sebastião Reis Júnior",
+      "summary": "Não necessariamente. No HC 1.035.054-SP (STJ, Sexta Turma, ministro Sebastião Reis Júnior), a Corte decidiu que a extração de dados do celular feita depois, mediante autorização judicial válida, não é automaticamente contaminada por prints de WhatsApp obtidos ilegalmente antes, desde que a acusação demonstre, com amparo concreto nos autos, que a via lícita levaria ao mesmo resultado de qualquer forma. É a aplicação da teoria da fonte independente, prevista no art. 157, §2º do CPP.",
+      "faq": [
+        {
+          "question": "O que é a teoria da fonte independente na prova digital?",
+          "answer": "É a regra do art. 157, §2º do CPP segundo a qual uma prova obtida por via lícita e autônoma não é contaminada por uma prova ilícita anterior, desde que fique demonstrado que ela seria alcançada de qualquer forma pelos trâmites regulares da investigação."
+        },
+        {
+          "question": "Print ilegal de WhatsApp sempre contamina o resto da investigação?",
+          "answer": "Não necessariamente. Se depois houver uma extração de dados feita com autorização judicial válida e realmente autônoma em relação ao conteúdo ilícito, o STJ pode reconhecer fonte independente e manter essa prova nova no processo."
+        },
+        {
+          "question": "Como a defesa pode questionar a aplicação da fonte independente nesses casos?",
+          "answer": "Verificando se o pedido de quebra de sigilo ou a decisão que autorizou a extração posterior citam ou se apoiam no conteúdo dos prints já declarados ilícitos. Se sim, não há fonte independente de verdade, e o argumento de contaminação pelos frutos da árvore envenenada volta a valer."
+        },
+        {
+          "question": "Essa decisão vale só pra prints de WhatsApp, ou pra qualquer prova ilícita?",
+          "answer": "A lógica do art. 157, §2º do CPP não é exclusiva de WhatsApp, mas sua aplicação depende sempre dos fatos concretos de cada caso, sobretudo da demonstração de que a via lícita era efetivamente independente da ilícita."
+        }
+      ]
+    },
+    "contentHtml": "<p>Uma paciente foi presa em flagrante e teve o celular apreendido de forma legítima. No relatório de investigação, porém, apareceram capturas de tela de conversas de WhatsApp obtidas sem autorização judicial, o que caracteriza prova ilícita. A defesa pediu o desentranhamento desses prints, e conseguiu. O ponto que chegou ao STJ foi o que aconteceu depois: a acusação requereu e obteve autorização judicial pra acessar os dados armazenados no próprio aparelho, já apreendido, e essa extração formal se tornou a nova base probatória do caso.</p>\n<p>No HC 1.035.054-SP, relatado pelo ministro Sebastião Reis Júnior, a Sexta Turma negou o pedido da defesa por unanimidade. A tese defensiva era a clássica dos frutos da árvore envenenada: se a origem da investigação sobre o conteúdo do celular foi ilícita, tudo que veio depois estaria contaminado. O STJ não aceitou. Aplicando o art. 157, §2º do Código de Processo Penal, a Corte entendeu que a extração posterior, feita com autorização judicial válida, configura prova por fonte independente, autônoma em relação aos prints ilegais.</p>\n<p>O fundamento técnico é específico: o celular já estava legitimamente apreendido desde a prisão em flagrante. Isso significa que seria natural que a extração dos dados fosse requerida de qualquer forma, pelos trâmites regulares da investigação, independente de os prints ilegais terem existido. O STJ frisou que reconhecer fonte independente exige mais do que essa lógica em abstrato: a acusação precisa demonstrar, com amparo concreto nos autos, a alta probabilidade de que o mesmo resultado seria alcançado pela via lícita normal.</p>\n<p>Esse é o ponto que muda a estratégia de defesa. A teoria da fonte independente não é um salvo-conduto automático pra qualquer prova ilícita inicial. Ela exige prova de que a via lícita era, de fato, independente, não apenas uma segunda tentativa disfarçada usando a mesma informação obtida de forma irregular. Na prática, isso significa checar um detalhe que muita defesa não olha: se o pedido de quebra de sigilo dos dados do celular, ou a decisão do juízo que autorizou o acesso, cita ou se apoia no conteúdo dos prints já desentranhados. Se citar, a suposta fonte independente não é independente, é fruto disfarçado da prova ilícita, e o argumento de contaminação volta a ter força.</p>\n<p>Quem atua em cadeia de custódia e prova digital sabe que grande parte das teses de nulidade some quando a acusação consegue emendar a ilicitude inicial com um passo formal correto depois. Saber exatamente onde fica a linha entre fonte independente de verdade e fonte independente de fachada é o que separa uma tese de nulidade genérica de uma tese que resiste ao STJ.</p>\n"
+  },
+  {
+    "slug": "stj-vetores-minimos-prova-digital",
+    "frontmatter": {
+      "title": "Quais são os 4 requisitos que toda prova digital precisa ter? STJ responde",
+      "date": "2026-08-31",
+      "excerpt": "STJ fixou os 4 vetores mínimos que toda prova digital precisa atender: auditabilidade, repetibilidade, reprodutibilidade e justificabilidade.",
+      "source": "STJ · 5ª Turma · AgRg no HC 828.054-RN · rel. min. Joel Ilan Paciornik",
+      "summary": "A prova digital precisa ter auditabilidade (dá pra verificar como foi coletada), repetibilidade (o procedimento refeito chega ao mesmo resultado), reprodutibilidade (outro perito consegue reproduzir a análise) e justificabilidade (cada etapa tem justificativa técnica documentada). Segundo o STJ (AgRg no HC 828.054-RN, ministro Joel Ilan Paciornik), a falta de qualquer um desses quatro vetores torna a prova frágil, com valor probatório reduzido ou nulo.",
+      "faq": [
+        {
+          "question": "O que são os \"vetores mínimos\" da prova digital segundo o STJ?",
+          "answer": "São quatro requisitos técnicos: auditabilidade, repetibilidade, reprodutibilidade e justificabilidade, usados pelo STJ pra avaliar se uma prova digital é confiável."
+        },
+        {
+          "question": "Falta de um desses vetores anula a prova automaticamente?",
+          "answer": "Não anula sozinho, mas reduz muito o valor probatório da prova, deixando ela epistemologicamente frágil, segundo o STJ."
+        },
+        {
+          "question": "Que norma técnica o STJ usa pra avaliar prova digital?",
+          "answer": "A ABNT NBR ISO/IEC 27037:2013, que trata de identificação, coleta e preservação de evidência digital."
+        },
+        {
+          "question": "Como o advogado usa esse checklist na prática?",
+          "answer": "Conferindo, prova por prova, se ela é auditável, repetível, reproduzível e justificável; a ausência de qualquer um desses pontos já é base técnica pra questionar o valor da prova."
+        }
+      ]
+    },
+    "contentHtml": "<p>Um processo usava como prova capturas de tela de conversas de WhatsApp, extraídas de um celular apreendido sem metodologia técnica documentada.</p>\n<p>No AgRg no HC 828.054-RN, relatado pelo ministro Joel Ilan Paciornik, a 5ª Turma do STJ decidiu, por unanimidade, que a prova era inadmissível por quebra de cadeia de custódia. Além de resolver aquele caso específico, o julgado fixou um parâmetro técnico que segue sendo citado como referência em decisões mais recentes sobre prova digital: os quatro vetores mínimos que toda prova digital precisa atender.</p>\n<p>Os quatro vetores são:</p>\n<ol>\n<li><strong>Auditabilidade</strong> — dá pra verificar, de forma independente, como a prova foi coletada e tratada.</li>\n<li><strong>Repetibilidade</strong> — o mesmo procedimento, refeito, chega ao mesmo resultado.</li>\n<li><strong>Reprodutibilidade</strong> — outro perito, com o mesmo material, consegue reproduzir a análise.</li>\n<li><strong>Justificabilidade</strong> — cada etapa do processo tem justificativa técnica documentada.</li>\n</ol>\n<p>O STJ usa a norma ABNT NBR ISO/IEC 27037:2013 como parâmetro técnico pra avaliar esses quatro pontos. A falta de qualquer um deles já torna a prova epistemologicamente frágil, com valor probatório reduzido ou nulo, mesmo que o conteúdo pareça convincente à primeira vista.</p>\n<p>Esse checklist virou referência recorrente em decisões posteriores do STJ sobre prova digital. Advogado que confere, prova por prova, se ela responde a esses quatro pontos consegue montar uma tese técnica de questionamento sem precisar entrar no mérito do conteúdo.</p>\n"
+  },
+  {
     "slug": "stj-juntada-tardia-gravacoes",
     "frontmatter": {
       "title": "Acusação pode guardar prova e só mostrar no fim do processo? STJ diz que não",
